@@ -1,0 +1,389 @@
+// Colors
+$primary: #DAC5A7 !default;
+$secondary: #181716 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+// Body
+$body-color: $primary !default;
+$body-bg: #0E0E0E !default;
+
+$body-secondary-color: rgba($body-color, .75) !default;
+$body-secondary-bg: $secondary !default;
+
+$body-tertiary-color: rgba($body-color, .5) !default;
+$body-tertiary-bg: $gray-900 !default;
+
+$body-emphasis-color: $primary !default;
+
+// Navbar
+$navbar-padding-y: 2rem !default;
+
+$navbar-light-color: $primary !default;
+$navbar-light-hover-color: rgba($primary, .8) !default;
+$navbar-light-active-color: rgba($primary, 1) !default;
+$navbar-light-disabled-color: rgba($primary, .3) !default;
+$navbar-light-icon-color: rgba($body-color, .75) !default;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-border-color: rgba($primary, .15) !default;
+$navbar-light-brand-color: $navbar-light-active-color !default;
+$navbar-light-brand-hover-color: $navbar-light-active-color !default;
+
+// Btn Close
+$btn-close-color: $primary !default;
+
+// Box Shadow
+$box-shadow: 0 .5rem 1rem rgba($primary, .15) !default;
+$box-shadow-sm: 0 .125rem .25rem rgba($primary, .075) !default;
+$box-shadow-lg: 0 1rem 3rem rgba($primary, .175) !default;
+$box-shadow-inset: inset 0 1px 2px rgba($primary, .075) !default;
+
+// Border
+$border-color-translucent: rgba($primary, .175) !default;
+$border-color: rgba($primary, 25%) !default;
+
+// Card
+$card-spacer-y: 2rem !default;
+$card-spacer-x: 2rem !default;
+$card-title-color: $primary !default;
+$card-border-color: rgba($primary, 25%) !default;
+$card-box-shadow: $box-shadow !default;
+$card-color: $primary !default;
+$card-bg: rgba($primary, 5%) !default;
+
+// Link
+$link-decoration: none !default;
+
+// Btn
+$btn-border-radius: 2.5px !default;
+
+// Input
+$input-border-color: rgba($primary, 25%) !default;
+$input-bg: rgba($primary, 5%) !default;
+$input-border-radius: 2.5px !default;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/helpers";
+
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html,body {
+  margin: 0;
+  font-family: "Inter", serif;
+  scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Josefin Sans", serif;
+}
+
+header {
+  
+  .navbar {
+    .navbar-anime-1 {
+      position: relative;
+      left: -120px;
+      opacity: 0%;
+    }
+    .navbar-anime-2 {
+      position: relative;
+      top: -120px;
+      opacity: 0%;
+    }
+    .navbar-anime-3 {
+      top: -120px;
+      opacity: 0%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      .navbar-anime-3 {
+        position: relative;
+      }
+    }
+
+    .nav-link {
+      text-transform: uppercase;
+      font-weight: $font-weight-light;
+    }
+    .btn {
+      text-transform: uppercase;
+      font-weight: $font-weight-light;
+    }
+  }
+}
+
+main {
+
+  .app-hero {
+    height: 82vh;
+
+    .hero-anime-1 {
+      position: relative;
+      top: 100px;
+      opacity: 0;
+    }
+
+    .fancy {
+      font-family: "Tinos", serif;
+      font-style: italic;
+    }
+    p {
+      font-weight: $font-weight-lighter;
+    }
+  }
+
+  .app-about {
+    .about-anime-1 {
+      position: relative;
+      left: -50px;
+      opacity: 0%;
+    }
+    .about-anime-2 {
+      position: relative;
+      top: 50px;
+      opacity: 0%;
+    }
+    .about-anime-3 {
+      position: relative;
+      left: 50px;
+      opacity: 0%;
+    }
+
+    .fancy {
+      font-family: "Tinos", serif;
+      font-style: italic;
+    }
+    p {
+      text-align: justify;
+      font-weight: $font-weight-light;
+    }
+    a {
+      font-size: 24px;
+    }
+  }
+
+  .app-services {
+    .services-anime-1 {
+      position: relative;
+      top: 150px;
+      opacity: 0;
+    }
+
+    .card {
+      width: 22rem;
+
+      small {
+        color: rgba($primary, 50%);
+      }
+      .card-title, small {
+        text-transform: uppercase;
+        font-weight: $font-weight-light;
+      }
+      .card-text {
+        color: rgba($primary, 50%);
+        text-align: justify;
+        font-weight: $font-weight-light;
+      }
+      a {
+        text-transform: uppercase;
+        font-weight: $font-weight-light;
+      }
+    }
+  }
+
+  .app-works {
+    .works-anime-1 {
+      position: relative;
+      left: -150px;
+      opacity: 0;
+    }
+    .works-anime-2 {
+      position: relative;
+      left: 150px;
+      opacity: 0;
+    }
+
+    .fancy {
+      font-family: "Tinos", serif;
+      font-style: italic;
+    }
+
+    .item {
+      background-color: $body-bg;
+      color: $primary;
+      border: 1px solid rgba($primary, 25%);
+
+      img {
+        opacity: 75%;
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+      .body {
+        background: rgba($gray-900, 75%);
+        backdrop-filter: blur(5px);
+        font-weight: $font-weight-light;
+
+        .type {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .app-process {
+    .process-anime-1,
+    .process-anime-2,
+    .process-anime-3,
+    .process-anime-4,
+    .process-anime-5 {
+      position: relative;
+      top: 150px;
+      opacity: 0;
+    }
+
+    .header {
+      p {
+        font-weight: $font-weight-lighter;
+      }
+      .fancy {
+        font-family: "Tinos", serif;
+        font-style: italic;
+      }
+    }
+
+    .right-triangle {
+      left: 0px;
+      clip-path: polygon(100% 50%, 0 0, 0 100%);
+    }
+    .left-triangle {
+      right: 0px;
+      clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    }
+    .right-triangle,
+    .left-triangle {
+      position: absolute;
+      background: rgba($primary, 5%);
+      height: 48px;
+      width: 48px;
+    }
+
+    @include media-breakpoint-down(md) {
+      .right-triangle,
+      .left-triangle {
+        display: none;
+      }
+    }
+
+    .card {
+      width: 100%;
+
+      .time {
+        background-color: rgba($body-bg, 50%);
+        border: 1px solid rgba($primary, 25%);
+      }
+      small {
+        color: rgba($primary, 50%);
+      }
+      .card-title, small {
+        text-transform: uppercase;
+        font-weight: $font-weight-light;
+      }
+      .card-text {
+        color: rgba($primary, 50%);
+        text-align: justify;
+        font-weight: $font-weight-light;
+      }
+      ul {
+        font-weight: $font-weight-light;
+      }
+    }
+  }
+
+  .app-cta {
+    .cta-anime-1 {
+      position: relative;
+      top: 100px;
+      opacity: 0%;
+    }
+
+    .banner {
+      border-top: 1px solid rgba($primary, 50%);
+      border-bottom: 1px solid rgba($primary, 50%);
+
+      .banner-content {
+        font-weight: $font-weight-light;
+      }
+    }
+
+    .header {
+      small {
+        text-transform: uppercase;
+        font-weight: $font-weight-light;
+      }
+      p {
+        font-weight: $font-weight-lighter;
+      }
+      .fancy {
+        font-family: "Tinos", serif;
+        font-style: italic;
+      }
+    }
+  }
+
+  // Contact Page
+  .contact-page-contact {
+    .contact-anime-1 {
+      position: relative;
+      left: -100px;
+      opacity: 0%;
+    }
+    .contact-anime-2 {
+      position: relative;
+      transform: scale(0.2);
+      opacity: 0%;
+    }
+    .contact-anime-3 {
+      position: relative;
+      top: 100px;
+      opacity: 0%;
+    }
+
+    .fancy {
+      font-family: "Tinos", serif;
+      font-style: italic;
+    }
+  }
+}
+
+footer {
+  a {
+    color: rgba($primary, 75%);
+    text-transform: uppercase;
+    font-weight: $font-weight-lighter;
+  }
+
+  .form-label {
+    text-transform: uppercase;
+  }
+}
