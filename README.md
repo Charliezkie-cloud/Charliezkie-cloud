@@ -38,7 +38,7 @@ You can check out some of my repositories below:
 
 ## 📬 Let's Connect!
 Feel free to reach out or connect with me:
-- 📧 Email: [your.email@example.com]
+- 📧 Email: [charleshenrytinoy8@example.com]
 - 🌐 Personal Portfolio: [My Personal Portfolio](https://charliezkie-cloud.github.io/Charliezkie-cloud/)
 - 🔗 LinkedIn: [My LinkedIn URL](https://www.linkedin.com/in/charles-henry-m-tinoy-jr-275612341/)
 - 🐦 Facebook: [My Facebook URL](https://www.facebook.com/Charlzk05)
