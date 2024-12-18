@@ -21,11 +21,10 @@ I’m actively working on a variety of projects that combine AI, web development
 - Productivity Tools: Building tools to enhance personal productivity using AI.
 - Web Applications: Developing responsive, dynamic web apps using React and Node.js.
 - Open Source Contributions: Contributing to open-source projects that focus on improving the tech community.
- 
-You can check out some of my repositories below:
-[My Personal Portfolio](https://charliezkie-cloud.github.io/Charliezkie-cloud/)
-[CharlesGPT](https://github.com/Charliezkie-cloud)
-[TheraAid (Capstone Project)](https://github.com/Charliezkie-cloud/TheraAid-Stable)
+### You can check out some of my repositories below:
+- [My Personal Portfolio](https://charliezkie-cloud.github.io/Charliezkie-cloud/)
+- [CharlesGPT](https://github.com/Charliezkie-cloud)
+- [TheraAid (Capstone Project)](https://github.com/Charliezkie-cloud/TheraAid-Stable)
 
 ## 🎯 Current Learning Goals
 - Enhancing my backend skills with Node.js and Express.
@@ -37,7 +36,7 @@ You can check out some of my repositories below:
 - Mobile Development: Exploring mobile app development using React Native and Flutter.
 
 ## 📬 Let's Connect!
-Feel free to reach out or connect with me:
+### Feel free to reach out or connect with me:
 - 📧 Email: [charleshenrytinoy8@example.com]
 - 🌐 Personal Portfolio: [My Personal Portfolio](https://charliezkie-cloud.github.io/Charliezkie-cloud/)
 - 🔗 LinkedIn: [My LinkedIn URL](https://www.linkedin.com/in/charles-henry-m-tinoy-jr-275612341/)
