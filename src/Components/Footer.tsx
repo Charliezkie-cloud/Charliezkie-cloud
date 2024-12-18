@@ -74,12 +74,12 @@ const Footer: React.FC = () => {
                     <a href="#lorem" onClick={(e) => scrollToHandle(e, "contact")}>Contact</a>
                   </> :
                   <>
-                    <a href="/">Hero</a>
-                    <a href="/">Services</a>
-                    <a href="/">Works</a>
-                    <a href="/">Process</a>
-                    <a href="/">About</a>
-                    <a href="/">Contact</a>
+                    <a href="/Charliezkie-cloud">Hero</a>
+                    <a href="/Charliezkie-cloud">Services</a>
+                    <a href="/Charliezkie-cloud">Works</a>
+                    <a href="/Charliezkie-cloud">Process</a>
+                    <a href="/Charliezkie-cloud">About</a>
+                    <a href="/Charliezkie-cloud">Contact</a>
                   </>
               }
             </div>

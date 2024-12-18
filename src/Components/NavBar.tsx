@@ -61,7 +61,7 @@ const NavBar: React.FC = () => {
               {
                 (hash === "contact") ?
                   <>
-                    <Button type="button" variant="primary" onClick={() => window.location.href = "/"}>
+                    <Button type="button" variant="primary" onClick={() => window.location.href = "/Charliezkie-cloud"}>
                       Go Back
                       <i className="bi bi-arrow-up-right ms-2"></i>
                     </Button>
@@ -69,7 +69,7 @@ const NavBar: React.FC = () => {
               }
               {
                 (hash !== "contact") ?
-                  <Button type="button" variant="primary" onClick={() => window.location.href = "/#contact"}>
+                  <Button type="button" variant="primary" onClick={() => window.location.href = "#contact"}>
                     Get in touch
                     <i className="bi bi-arrow-up-right ms-2"></i>
                   </Button> :
