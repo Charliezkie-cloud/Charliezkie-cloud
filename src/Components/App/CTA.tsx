@@ -52,7 +52,7 @@ const CTA: React.FC = () => {
           <h1 className="display-1 mb-0 cta-anime-1">Let's make your</h1>
           <h1 className="display-1 fancy mb-4 cta-anime-1">Website shine</h1>
           <p className="mb-4 text-center cta-anime-1">Premium web design, webflow, and SEO services to<br/>help your business stand out.</p>
-          <Button type="button" variant="primary" className="text-uppercase fw-light cta-anime-1" onClick={() => window.location.href = "/#contact"}>
+          <Button type="button" variant="primary" className="text-uppercase fw-light cta-anime-1" onClick={() => window.location.href = "#contact"}>
             Get in touch
             <i className="bi bi-arrow-up-right ms-2"></i>
           </Button>
