@@ -40,7 +40,7 @@ const Works: React.FC = () => {
       const sectionTop = sectionRef.current.getBoundingClientRect().top;
       const { innerHeight } = window;
   
-      if (innerHeight >= sectionTop + 200) {
+      if (innerHeight >= sectionTop + 300) {
         anime({
           targets: [".works-anime-1", ".works-anime-2"],
           left: "0px",

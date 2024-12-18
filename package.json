@@ -1,5 +1,6 @@
 {
   "name": "codespaces-blank",
+  "homepage": "https://charliezkie-cloud.github.io/#/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +14,7 @@
     "@types/react-dom": "^18.0.0",
     "animejs": "^3.2.2",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.2.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.6",
     "react-dom": "^19.0.0",
@@ -27,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch-sass": "sass --watch ./src/sass:./src/assets/css"
+    "watch-sass": "sass --watch ./src/sass:./src/assets/css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

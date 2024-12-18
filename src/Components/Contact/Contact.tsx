@@ -1,8 +1,14 @@
-import React, { useEffect } from "react";
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Button, Col, Container, Form, Row, Toast, ToastContainer } from "react-bootstrap";
 import anime from "animejs";
 
 const Contact: React.FC = () => {
+  const [validated, setValidated] = useState(false);
+  const [toast, setToast] = useState({
+    message: "",
+    show: false
+  });
+
   const openUrl = (url: string) => {
     window.open(url);
   }
@@ -36,8 +42,52 @@ const Contact: React.FC = () => {
     })
   }, []);
 
+  const contactFormOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const form = e.currentTarget;
+    const name = form.nameInput.value as string;
+    const email = form.email.value as string;
+    const message = form.message.value as string;
+
+    if (!form.checkValidity()) {
+      return setValidated(true);
+    }
+
+    console.log(`Name: ${name.split(" ").map(word => word.charAt(0) + word.slice(1)).join("")}`);
+    console.log(`Email: ${email}`);
+    console.log(`Message: ${message}`);
+
+    if (validated) {
+      setValidated(false);
+    }
+
+    setToast({
+      message: "Your message has been successfully sent!",
+      show: true
+    });
+  }
+
+  const toastOnClose = () => {
+    setToast({
+      message: toast.message,
+      show: false
+    });
+  }
+
   return (
     <section className="contact-page-contact">
+      <ToastContainer position="bottom-end" className="p-3 position-fixed">
+        <Toast show={toast.show} onClose={toastOnClose} delay={5000} autohide>
+          <Toast.Header closeButton>
+            <strong className="me-auto">Notification</strong>
+            <small>Now</small>
+          </Toast.Header>
+          <Toast.Body>{toast.message}</Toast.Body>
+        </Toast>
+      </ToastContainer>
+
       <Container className="py-5">
         <Row>
           <Col lg className="d-flex align-items-center justify-content-center">
@@ -51,18 +101,20 @@ const Contact: React.FC = () => {
             <div className="p-5 bg-body-secondary border mb-2 mb-lg-3 contact-anime-2">
               {/* <div className="text-uppercase mb-4 fw-lighter">Contact</div> */}
               <h1 className="display-4 mb-3">Contact</h1>
-              <Form>
+              <Form noValidate validated={validated} onSubmit={contactFormOnSubmit}>
 
                 <Form.Floating className="mb-3">
-                  <Form.Control type="email" placeholder="" name="email" />
-                  <Form.Label className="text-uppercase fw-light opacity-75">Name</Form.Label>
+                  <Form.Control type="text" placeholder="" name="nameInput" />
+                  <Form.Label className="text-uppercase fw-light opacity-75" pattern="[A-Za-z\s]+" required>Name</Form.Label>
+                  <Form.Control.Feedback type="invalid">Only letters allowed.</Form.Control.Feedback>
                 </Form.Floating>
                 <Form.Floating className="mb-3">
                   <Form.Control type="email" placeholder="" name="email" />
-                  <Form.Label className="text-uppercase fw-light opacity-75">Email</Form.Label>
+                  <Form.Label className="text-uppercase fw-light opacity-75" required>Email</Form.Label>
+                  <Form.Control.Feedback type="invalid">Enter a valid email.</Form.Control.Feedback>
                 </Form.Floating>
                 <Form.Floating className="mb-3">
-                  <Form.Control as="textarea" placeholder="" name="email" style={{ height: "250px" }} />
+                  <Form.Control as="textarea" placeholder="" name="message" style={{ height: "250px" }} required />
                   <Form.Label className="text-uppercase fw-light opacity-75">Message</Form.Label>
                 </Form.Floating>
                 <div>

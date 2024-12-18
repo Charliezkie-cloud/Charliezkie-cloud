@@ -33,7 +33,7 @@ const Services: React.FC = () => {
       const sectionTop = sectionRef.current.getBoundingClientRect().top;
       const { innerHeight } = window;
   
-      if (innerHeight >= sectionTop + 200) {
+      if (innerHeight >= sectionTop + 300) {
         anime({
           targets: [".services-anime-1"],
           top: "0px",
