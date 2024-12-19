@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "./assets/css/Main.css";
 
 import NavBar from "./Components/NavBar";
@@ -10,6 +11,10 @@ import CTA from "./Components/App/CTA";
 import Footer from "./Components/Footer";
 
 const App: React.FC = () => {
+  useEffect(() => {
+    document.title = "charlzk. | Charles Henry Tinoy";
+  }, []);
+
   return (
     <>
       <header>
