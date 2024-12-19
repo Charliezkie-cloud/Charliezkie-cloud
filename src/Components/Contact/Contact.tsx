@@ -98,7 +98,7 @@ const Contact: React.FC = () => {
             </div>
           </Col>
           <Col lg>
-            <div className="p-5 bg-body-secondary border mb-2 mb-lg-3 contact-anime-2">
+            <div className="p-3 p-sm-5 bg-body-secondary border mb-2 mb-lg-3 contact-anime-2">
               {/* <div className="text-uppercase mb-4 fw-lighter">Contact</div> */}
               <h1 className="display-4 mb-3">Contact</h1>
               <Form noValidate validated={validated} onSubmit={contactFormOnSubmit}>
