@@ -1,9 +1,9 @@
 # Hello! I'm Charles Henry M. Tinoy Jr. 👋
 
-Welcome to my GitHub profile! **I'm a 19-year-old IT student** passionate about technology, problem-solving, and innovation. I'm currently studying at the **University of Southern Philippines Foundation**, with a focus on **web development**, **artificial intelligence**, and **programming**.
+Welcome to my GitHub profile! **I'm a 19-year-old IT student** passionate about technology, problem-solving, and innovation. I'm currently studying at the **University of Cebu - Banilad Campus**, with a focus on **web development**, **artificial intelligence**, and **programming**.
 
 ## 🌟 About Me
-- 🎓 **Education:** Currently studying Information Technology at the University of Southern Philippines Foundation.
+- 🎓 **Education:** Currently studying Information Technology at the University of Cebu - Banilad Campus.
 - 💡 **Tech Enthusiast:** Passionate about coding, artificial intelligence, and how technology can solve real-world challenges.
 - 🛠️ **Specialization:** I specialize in web development, computer programming, and AI integration into productivity tools.
 - 🚴‍♂️ **Hobbies:** Outside of tech, I enjoy riding motorcycles, staying active, and playing basketball with friends.
