@@ -10,7 +10,7 @@ Welcome to my GitHub profile! **I'm a 19-year-old IT student** passionate about 
 
 ## 🧠 Skills & Technologies
 ### Programming Languages
-[![My Programming Languages](https://skillicons.dev/icons?i=ts,js,python,c,cpp,cs,html,css,sass)](https://skillicons.dev)
+[![My Programming Languages](https://skillicons.dev/icons?i=java,ts,js,python,c,cpp,cs,html,css,sass)](https://skillicons.dev)
 ### Frameworks & Libraries
 [![My Programming Languages](https://skillicons.dev/icons?i=react,nodejs,express,redux,nextjs,tailwind,bootstrap,laravel,django,electron)](https://skillicons.dev)
 ### Tools & Platforms
